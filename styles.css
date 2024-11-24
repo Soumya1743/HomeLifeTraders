@@ -1,0 +1,327 @@
+#hlt_main {
+    display: flex;
+}
+#side_navigation {
+    background-color: #F6F6F6;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+#menu_button {
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+}
+#menu_image {
+    width: 1.5rem;
+    padding-top: 2rem;
+}
+#menu_image1 {
+    width: 1.8rem;
+    padding-top: 1rem;
+}
+#offcanvas_images {
+    display: block;
+}
+#span {
+    display: flex;
+}
+#side_navigation_images {
+    width: 2rem;
+    display: block;
+}
+#hlt_body {
+    background-color: #F6F6F6;
+    margin-left: 3rem;
+    width: 100%;
+}
+#hlt_body_navigation {
+    display: flex;
+    background-color: white;
+    padding-left: 8rem;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+#main_logo {
+    width: 10rem;
+    height: 10rem;
+}
+#body_navigation {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: white;
+}
+.text {
+    display: block;
+    background: linear-gradient(to right, #02E8FF, #156da9, #156da9, #FE0000, #FE0000);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+#heading {
+    display: block;
+    text-align: center;
+    vertical-align: top;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
+#body_navigation a {
+    text-decoration: none;
+    color: #156da9;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+#body_navigation a:hover {
+    color: #E72929;
+    background-color: #e4e4e4;
+    box-shadow: 0px 0px 10px #156da9;
+    transition: all 0.8s ease-in-out;
+}
+#dropdown_menu {
+    display: none;
+}
+#hlt_main_body {
+    z-index: -99;
+    margin-top: 10rem;
+    background-color: #F6F6F6;
+}
+
+
+/* Main body content */
+
+#body_content {
+    padding-top: 1.5rem;
+}
+.input-box {
+    position: relative;
+    height: 3.5rem;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.button {
+    height: 3rem;
+}
+
+.input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+}
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+}
+.input-box .button {
+    right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: #156da9;
+    cursor: pointer;
+}
+.input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+
+/* Product Details */
+
+#products {
+    padding-top: 5rem;
+}
+#products_heading {
+    color: #156da9;
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+#products_quote {
+    color: #E72929;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#electronics,
+#home_appliances {
+    padding-top: 2rem;
+}
+#electronics_heading,
+#home_appliances_heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0rem 0rem 2rem 0rem;
+    color: gray;
+    letter-spacing: 4px;
+}
+#electronics_block,
+#home_appliances_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+#electronics1 {
+    background-color: white;
+    width: 18rem;
+    padding: 4rem;
+    border-radius: 10px;
+    transition: transform 0.2s
+}
+#electronics1:hover {
+    box-shadow: 0px 0px 10px gray;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#electronics1_image {
+    width: 10rem;
+    border-radius: 10px;
+}
+#electronics1_title {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+#type {
+    color: gray;
+}
+#stars {
+    width: 6rem;
+    display: block;
+}
+#done {
+    width: 1.4rem;
+}
+#in_stock {
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+#electronics1 p i {
+    text-decoration: line-through;
+    color: #E72929;
+}
+#electronics1 p b {
+    color: #156da9;
+}
+#add_to_cart {
+    background-color: #0099ff;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 1014px) {
+    #body_navigation {
+        display: none;
+    }
+    #dropdown_menu {
+        display: flex;
+        justify-content: center;
+        padding-left: 13rem;
+        padding-top: 4rem;
+    }
+    #dropdown_menu_image {
+        width: 2rem;
+        height: 2rem;
+        float: right;
+    }
+    #side_navigation {
+        display: none;
+    }
+    #hlt_body {
+        margin-left: 0rem;
+    }
+    #electronics1_image {
+        width: 7rem;
+    }
+}
+
+@media (max-width: 928px) {
+    #electronics1 {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 579px) {
+    #electronics_block {
+        column-gap: 1rem;
+        row-gap: 2rem;
+    }
+    #products_heading {
+        font-size: 3rem;
+    }
+    #electronics1 {
+        padding: 1rem;
+        flex: 0;
+    }
+    #electronics1:hover {
+        flex: 0;
+    }
+    #electronics1_image {
+        width: 7rem;
+    }
+    #electronics1_title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 525px) {
+    #dropdown_menu {
+        padding-left: 0rem;
+        padding-top: 1.5rem;
+    }
+    #main_logo {
+        width: 5rem;
+        height: 5rem;
+    }
+    #hlt_main_body {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .input-box {
+        height: 66px;
+        margin: 0 8px;
+    }
+    .input-box i {
+        left: 12px;
+        font-size: 25px;
+    }
+    .input-box input {
+        padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+        right: 12px;
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
