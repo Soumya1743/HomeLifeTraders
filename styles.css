@@ -45,8 +45,8 @@
     width: 100vw;
 }
 #main_logo {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
 }
 #body_navigation {
     padding-top: 1rem;
@@ -57,7 +57,7 @@
 }
 .text {
     display: block;
-    background: linear-gradient(to right, #02E8FF, #156da9, #156da9, #FE0000, #FE0000);
+    background: linear-gradient(to right, #ed2e2e, #ed2e2e, #02E8FF, #156da9, #ed2e2e, #156da9, #ed2e2e, #ed2e2e);
     color: transparent;
     -webkit-background-clip: text;
 }
@@ -65,12 +65,14 @@
     display: block;
     text-align: center;
     vertical-align: top;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 5px;
 }
 #body_navigation a {
     text-decoration: none;
-    color: #156da9;
+    color: gray;
     font-size: 1rem;
     padding: 0.7rem;
     border-radius: 10px;
@@ -84,12 +86,20 @@
 #dropdown_menu {
     display: none;
 }
-#hlt_main_body {
-    z-index: -99;
-    margin-top: 10rem;
-    background-color: #F6F6F6;
+#bottom_images{
+    display: none;
+}
+#cart_image, #wishlist{
+    width: 2rem;
 }
 
+/* HLT Main Content after Navigation */
+
+#hlt_main_body {
+    z-index: -99;
+    margin-top: 9rem;
+    background-color: #F6F6F6;
+}
 
 /* Main body content */
 
@@ -109,7 +119,6 @@
 .button {
     height: 3rem;
 }
-
 .input-box .button {
     position: absolute;
     top: 50%;
@@ -236,17 +245,35 @@
 
 
 
+
+
+
+
 /* Responsive */
 
-@media (max-width: 1014px) {
+@media (max-width: 1111px) {
+    #heading {
+        font-size: 3rem;
+    }
+    #body_navigation a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1030px) {
     #body_navigation {
         display: none;
+    }
+    #hlt_body_navigation {
+        display:inline-flex;
+        justify-content: space-around;
+        padding-left: 0rem;
     }
     #dropdown_menu {
         display: flex;
         justify-content: center;
         padding-left: 13rem;
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
     #dropdown_menu_image {
         width: 2rem;
@@ -256,11 +283,29 @@
     #side_navigation {
         display: none;
     }
+    #main_logo {
+        width: 8rem;
+        height: 8rem;
+    }
     #hlt_body {
         margin-left: 0rem;
     }
+    #hlt_main_body {
+        margin-top: 8rem;
+    }
     #electronics1_image {
         width: 7rem;
+    }
+    #bottom_images{
+        display: block;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+    #cart_image, #wishlist{
+        padding: 1rem 0rem 1rem 0rem;
     }
 }
 
@@ -268,15 +313,18 @@
     #electronics1 {
         width: 15rem;
     }
+    #products {
+        padding-top: 2rem;
+    }
+    #products_heading {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 579px) {
     #electronics_block {
         column-gap: 1rem;
         row-gap: 2rem;
-    }
-    #products_heading {
-        font-size: 3rem;
     }
     #electronics1 {
         padding: 1rem;
@@ -289,6 +337,14 @@
         width: 7rem;
     }
     #electronics1_title {
+        font-size: 1rem;
+    }
+    #electronics,
+    #home_appliances {
+        padding-top: 0rem;
+    }
+    #electronics_heading,
+    #home_appliances_heading {
         font-size: 1rem;
     }
 }
