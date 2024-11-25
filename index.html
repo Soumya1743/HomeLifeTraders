@@ -16,7 +16,7 @@
     <div id="hlt_main">
 
         <!-- Side Navigation Bar -->
-         
+
         <div id="side_navigation">
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample" id="menu_button">
@@ -31,11 +31,41 @@
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel" id="side_bar">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close" id="close_button"></button>
                 <div class="offcanvas-header" id="offcanvas_images">
-                    <span id="span"><img src="resources/Menu (1).png" alt="" id="side_navigation_images"><p>All Categories</p></span>
-                    <span id="span"><img src="resources/beauty.webp" alt="" id="side_navigation_images"><p>Beauty</p></span>
-                    <span id="span"><img src="resources/apliances.webp" alt="" id="side_navigation_images"><p>Appliances</p></span>
+                    <span id="side_navigation_span1">
+                        <img src="resources/Menu (2).png" alt="" id="side_navigation_image1">
+                        <p id="side_navigation_title1">All Categories</p>
+                    </span>
+                    <span id="side_navigation_span"><img src="resources/beauty.webp" alt="" id="side_navigation_images">
+                        <p id="side_navigation_title">Beauty</p>
+                    </span>
+                    <span id="side_navigation_span"><img src="resources/apliances.webp" alt=""
+                            id="side_navigation_images">
+                        <p id="side_navigation_title">Appliances</p>
+                    </span>
+                    <span id="side_navigation_span"><img src="resources/home.webp" alt="" id="side_navigation_images">
+                        <p id="side_navigation_title">Home</p>
+                    </span>
+                    <span id="side_navigation_span"><img src="resources/electronics.webp" alt=""
+                            id="side_navigation_images">
+                        <p id="side_navigation_title">Electronics</p>
+                    </span>
+                    <span id="side_navigation_span"><img src="resources/sports_hub.webp" alt=""
+                            id="side_navigation_images">
+                        <p id="side_navigation_title">Sports Hub</p>
+                    </span>
+                    <span id="side_navigation_span"><img src="resources/smart_watch.webp" alt=""
+                            id="side_navigation_images">
+                        <p id="side_navigation_title">Smart Watch</p>
+                    </span>
+                    <span id="side_navigation_span"><img src="resources/speaker.webp" alt=""
+                            id="side_navigation_images">
+                        <p id="side_navigation_title">Speaker</p>
+                    </span>
                 </div>
+
             </div>
         </div>
 
@@ -63,18 +93,35 @@
                 <!-- Hidden Dropdown Menu -->
 
                 <div id="dropdown_menu">
-                    <img src="resources/Menu (1).png" alt="" id="dropdown_menu_image">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"  id="dropdown_menu_button"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <img src="resources/Menu (1).png" alt="" id="dropdown_menu_image">
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">
+                                <!-- Offcanvas right -->
+                            </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- ... -->
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-            
+
             <!-- HLT Main Content after Navigation -->
 
             <div id="hlt_main_body">
 
                 <!-- Carousel -->
-                 
+
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -104,8 +151,9 @@
                 <center>
                     <marquee behavior="scroll" direction="" id="marquee" loop="infinite">
                         <span id="marquee_text">
-                            <h5 id="scrolling_text">Welcome! You are on HomeLifeTraders.com, You can here search for more products.</h5>
-                            <h5 id="scrolling_text1">Welcome! You are on HomeLifeTraders.com</h5>
+                            <h5 id="scrolling_text">Welcome! You are on HomeLifeTraders.com, You can here search for
+                                more products.</h5>
+                            <h5 id="scrolling_text1">Welcome! You are on HLT...</h5>
                         </span>
                     </marquee>
                 </center>
@@ -140,7 +188,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹4,999.00</i> <b>₹999.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                     <div id="electronics1">
                                         <img src="resources/action_camera.webp" alt="" id="electronics1_image">
@@ -151,7 +200,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹6,999.00</i> <b>₹1,699.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                     <div id="electronics1">
                                         <img src="resources/airpods_pro.webp" alt="" id="electronics1_image">
@@ -162,7 +212,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹4,999.00</i> <b>₹799.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                     <div id="electronics1">
                                         <img src="resources/nona_nhp.webp" alt="" id="electronics1_image">
@@ -173,7 +224,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹845.00</i> <b>₹499.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                     <div id="electronics1">
                                         <img src="resources/projector_for_home.webp" alt="" id="electronics1_image">
@@ -184,7 +236,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹8,000.00</i> <b>₹5,600.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
 
                                 </div>
@@ -206,7 +259,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹2,999.00</i> <b>₹899.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                     <div id="electronics1">
                                         <img src="resources/jucer_mixer.webp" alt="" id="electronics1_image">
@@ -217,7 +271,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹1,499.00</i> <b>₹249.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                     <div id="electronics1">
                                         <img src="resources/mosquito_lamp.webp" alt="" id="electronics1_image">
@@ -228,7 +283,8 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹999.00</i> <b>₹149.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                     <div id="electronics1">
                                         <img src="resources/projector_portable.webp" alt="" id="electronics1_image">
@@ -239,82 +295,302 @@
                                         <p id="in_stock">In stock</p>
                                         <p><i>₹9,999.00</i> <b>₹1,499.00</b></p>
                                         <button id="add_to_cart">Add To Cart</button>
-                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
                                 </div>
+                            </div>
 
-                                <hr>
+                            <hr>
 
-                                <!-- APPLIANCES -->
+                            <!-- APPLIANCES -->
 
-                                <div id="home_appliances">
-                                    <h1 id="home_appliances_heading">APPLIANCES</h1>
-                                    <div id="home_appliances_block">
-                                        <div id="electronics1">
-                                            <img src="resources/camping_stove.webp" alt="" id="electronics1_image">
-                                            <h3 id="electronics1_title">Camping Stove Gas</h3>
-                                            <p id="type">Appliances</p>
-                                            <img src="resources/stars.png" alt="" id="stars">
-                                            <img src="resources/Done.png" alt="" id="done">
-                                            <p id="in_stock">In stock</p>
-                                            <p><i>₹1,299.00</i> <b>₹450.00</b></p>
-                                            <button id="add_to_cart">Add To Cart</button>
-                                            <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
-                                        </div>
-                                        <div id="electronics1">
-                                            <img src="resources/screwdriver.webp" alt="" id="electronics1_image">
-                                            <h3 id="electronics1_title">Cordless Electric</h3>
-                                            <p id="type">Appliances</p>
-                                            <img src="resources/stars.png" alt="" id="stars">
-                                            <img src="resources/Done.png" alt="" id="done">
-                                            <p id="in_stock">In stock</p>
-                                            <p><i>₹4,999.00</i> <b>₹1,200.00</b></p>
-                                            <button id="add_to_cart">Add To Cart</button>
-                                            <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
-                                        </div>
-                                        <div id="electronics1">
-                                            <img src="resources/karaoke_machine.webp" alt="" id="electronics1_image">
-                                            <h3 id="electronics1_title">Karaoke Machine</h3>
-                                            <p id="type">Appliances</p>
-                                            <img src="resources/stars.png" alt="" id="stars">
-                                            <img src="resources/Done.png" alt="" id="done">
-                                            <p id="in_stock">In stock</p>
-                                            <p><i>₹999.00</i> <b>₹480.00</b></p>
-                                            <button id="add_to_cart">Add To Cart</button>
-                                            <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
-                                        </div>
-                                        <div id="electronics1">
-                                            <img src="resources/pressure_washer.webp" alt="" id="electronics1_image">
-                                            <h3 id="electronics1_title">Pressure Washer</h3>
-                                            <p id="type">Appliances</p>
-                                            <img src="resources/stars.png" alt="" id="stars">
-                                            <img src="resources/Done.png" alt="" id="done">
-                                            <p id="in_stock">In stock</p>
-                                            <p><i>₹4,999.00</i> <b>₹1,700.00</b></p>
-                                            <button id="add_to_cart">Add To Cart</button>
-                                            <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
-                                        </div>
-                                        <div id="electronics1">
-                                            <img src="resources/solar.webp" alt="" id="electronics1_image">
-                                            <h3 id="electronics1_title">Solar Interaction Wall</h3>
-                                            <p id="type">Appliances</p>
-                                            <img src="resources/stars.png" alt="" id="stars">
-                                            <img src="resources/Done.png" alt="" id="done">
-                                            <p id="in_stock">In stock</p>
-                                            <p><i>₹799.00</i> <b>₹320.00</b></p>
-                                            <button id="add_to_cart">Add To Cart</button>
-                                            <button id="add_to_cart_image"><img src="resources/cart.png" alt="" id="image_add_to_cart"></button>
-                                        </div>
+                            <div id="home_appliances">
+                                <h1 id="home_appliances_heading">APPLIANCES</h1>
+                                <div id="home_appliances_block">
+                                    <div id="electronics1">
+                                        <img src="resources/camping_stove.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Camping Stove Gas</h3>
+                                        <p id="type">Appliances</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹1,299.00</i> <b>₹450.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
                                     </div>
+                                    <div id="electronics1">
+                                        <img src="resources/screwdriver.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Cordless Electric</h3>
+                                        <p id="type">Appliances</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹4,999.00</i> <b>₹1,200.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/karaoke_machine.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Karaoke Machine</h3>
+                                        <p id="type">Appliances</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹999.00</i> <b>₹480.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/pressure_washer.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Pressure Washer</h3>
+                                        <p id="type">Appliances</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹4,999.00</i> <b>₹1,700.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/solar.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Solar Interaction Wall</h3>
+                                        <p id="type">Appliances</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹799.00</i> <b>₹320.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <hr>
+
+                            <!-- OTHER PRODUCTS -->
+
+                            <div id="home_appliances">
+                                <h1 id="home_appliances_heading">OTHER PRODUCTS</h1>
+                                <div id="home_appliances_block">
+                                    <div id="electronics1">
+                                        <img src="resources/beauty_image.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">5 in 1 Beauty</h3>
+                                        <p id="type">Beauty</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹4,999.00</i> <b>₹999.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/games_retro_image.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">SUP 400 in 1 Games</h3>
+                                        <p id="type">Sports Hub</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹899.00</i> <b>₹400.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/smart_watch_image.webp  " alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">8 in 1 Smartwatch</h3>
+                                        <p id="type">Smart Watch</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹1, 999.00</i> <b>₹600.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/bar_speaker.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Bar Speaker</h3>
+                                        <p id="type">Speaker</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹2,499.00</i> <b>₹899.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/tyre_speaker.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Tyre Speaker</h3>
+                                        <p id="type">Speaker</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹1,599.00</i> <b>₹749.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/rechargable_power_style.webp" alt=""
+                                            id="electronics1_image">
+                                        <h3 id="electronics1_title">USB Rechargable</h3>
+                                        <p id="type">Appliances</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹799.00</i> <b>₹350.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/wifi_camera.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Wi-Fi Camera CCTV</h3>
+                                        <p id="type">Home</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹5,999.00</i> <b>₹999.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/security_motion_sensor.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Security Motion</h3>
+                                        <p id="type">Electronics</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹1,499.00</i> <b>₹999.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/tru_toys.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">TRU TOYS Magical</h3>
+                                        <p id="type">Electronics</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹1,499.00</i> <b>₹249.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/massager1.jpg" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Smart Scalp Massager</h3>
+                                        <p id="type">Accessories</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹999.00</i> <b>₹699.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/drone2.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">998 PRO Foldable Toy</h3>
+                                        <p id="type">Accessories</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹4,999.00</i> <b>₹1,100.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/airpods.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">2 T-800 Watch</h3>
+                                        <p id="type">Accessories</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹1,999.00</i> <b>₹999.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/dusk_lights.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Wireless Dusk to Dawn</h3>
+                                        <p id="type">Accessories</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹799.00</i> <b>₹299.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/camping_lamps.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Rechargable Camping</h3>
+                                        <p id="type">Accessories</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹599.00</i> <b>₹150.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/google_mask.webp" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title">Rainbow Google Mask</h3>
+                                        <p id="type">Accessories</p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹799.00</i> <b>₹249.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title"></h3>
+                                        <p id="type"></p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹.00</i> <b>₹.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
+                                    <div id="electronics1">
+                                        <img src="resources/" alt="" id="electronics1_image">
+                                        <h3 id="electronics1_title"></h3>
+                                        <p id="type"></p>
+                                        <img src="resources/stars.png" alt="" id="stars">
+                                        <img src="resources/Done.png" alt="" id="done">
+                                        <p id="in_stock">In stock</p>
+                                        <p><i>₹.00</i> <b>₹.00</b></p>
+                                        <button id="add_to_cart">Add To Cart</button>
+                                        <button id="add_to_cart_image"><img src="resources/cart.png" alt=""
+                                                id="image_add_to_cart"></button>
+                                    </div>
                                 </div>
 
                             </div>
                     </center>
-                    
+
 
                 </div>
-                
+
                 <div id="bottom_images">
                     <img src="resources/Shopping Cart.png" alt="" id="cart_image">
                     <img src="resources/Heart.png" alt="" id="wishlist">
