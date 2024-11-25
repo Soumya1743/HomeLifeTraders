@@ -78,9 +78,9 @@
     border-radius: 10px;
 }
 #body_navigation a:hover {
-    color: #E72929;
+    color: #156da9;
     background-color: #e4e4e4;
-    box-shadow: 0px 0px 10px #156da9;
+    box-shadow: 0px 0px 10px #E72929;
     transition: all 0.8s ease-in-out;
 }
 #dropdown_menu {
@@ -104,7 +104,7 @@
     padding-top: 1rem;
     color: rgb(104, 217, 248);
     letter-spacing: 5px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: 100;
 }
@@ -116,6 +116,9 @@
 }
 #scrolling_text{
     text-align: center;
+}
+#scrolling_text1{
+    display: none;
 }
 
 
@@ -181,7 +184,7 @@
 #products_heading {
     color: #156da9;
     font-size: 5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 3px;
 }
 #products_quote {
@@ -199,7 +202,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0rem 0rem 2rem 0rem;
     color: gray;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
+    font-weight: 100;
 }
 #electronics_block,
 #home_appliances_block {
@@ -211,8 +215,8 @@
 }
 #electronics1 {
     background-color: white;
-    width: 18rem;
-    padding: 4rem;
+    width: 15rem;
+    padding: 2rem;
     border-radius: 10px;
     transition: transform 0.2s
 }
@@ -258,6 +262,9 @@
     border: none;
     border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#add_to_cart_image{
+    display: none;
 }
 
 
@@ -335,13 +342,32 @@
 
 @media (max-width: 928px) {
     #electronics1 {
-        width: 15rem;
+        width: 13rem;
     }
     #products {
         padding-top: 2rem;
     }
     #products_heading {
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 930px) {
+    #add_to_cart{
+        display: none;
+    }
+    #add_to_cart_image{
+        display: block;
+        background-color: #0099ff;
+        color: white;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        margin-left: 0;
+        border: none;
+        border-radius: 10px;
+    }
+    #image_add_to_cart{
+        width: 2rem;
+        height: 2rem;
     }
 }
 
@@ -394,6 +420,12 @@
     }
     #hlt_main_body {
         margin-top: 5rem;
+    }
+    #scrolling_text{
+        display: none;
+    }
+    #scrolling_text1{
+        display: block;
     }
 }
 
